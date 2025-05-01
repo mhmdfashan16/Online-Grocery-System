@@ -104,7 +104,7 @@ const Cart = () => {
         <div className="flex flex-col md:flex-row mt-16">
             <div className='flex-1 max-w-4xl'>
                 <h1 className="text-3xl font-medium mb-6">
-                    Shopping Cart <span className="text-sm text-primary">{getCartCount()} Items</span>
+                    Shopping Cart <span className="text-sm text-amber-500">{getCartCount()} Items</span>
                 </h1>
 
                 <div className="grid grid-cols-[2fr_1fr_1fr] text-gray-500 text-base font-medium pb-3">
@@ -152,8 +152,8 @@ const Cart = () => {
 
                 <button
                 onClick={()=> {navigate("/products"); scrollTo(0,0)}}
-                className="group cursor-pointer flex items-center mt-8 gap-2 text-primary hover:text-primary-dull font-medium">
-                    <img src={assets.arrow_right_icon_colored} alt="arrow" className='group-hover:-translate-x-1 transition'/>
+                className="group cursor-pointer flex items-center mt-8 gap-2 text-amber-500 hover:text-amber-400 font-medium">
+                    <img src={assets.arrow_left_icon} alt="arrow" className='w-6 h-4 group-hover:-translate-x-1 transition'/>
                     Continue Shopping
                 </button>
 
@@ -171,7 +171,7 @@ const Cart = () => {
                         <p
                         
                         className="text-gray-500">{selectedAddress ? `${selectedAddress.street}, ${selectedAddress.city}, ${selectedAddress.state}, ${selectedAddress.country}` : "No address found"}</p>
-                        <button onClick={() => setShowAddress(!showAddress)} className="text-primary hover:underline cursor-pointer">
+                        <button onClick={() => setShowAddress(!showAddress)} className="text-amber-500 hover:underline cursor-pointer">
                             Change
                         </button>
                         {showAddress && (
@@ -222,7 +222,7 @@ const Cart = () => {
 
                 <button
                 onClick={placeOrder}
-                className="w-full py-3 mt-6 cursor-pointer bg-primary text-white font-medium hover:bg-primary-dull transition">
+                className="w-full py-3 mt-6 cursor-pointer bg-amber-500 text-white font-medium hover:bg-amber-400 transition">
                     {paymentOption === "COD" ? "Place Order" : "Proceed to Checkout"}
                 </button>
             </div>

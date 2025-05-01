@@ -2,8 +2,11 @@ import logo from "./logo.svg";
 import search_icon from "./search_icon.svg";
 import remove_icon from "./remove_icon.svg";
 import arrow_right_icon_colored from "./arrow_right_icon_colored.svg";
+import arrow_left_icon from "./arrow_left_icon.png";
 import star_icon from "./star_icon.svg";
+import star_icon_new from "./star_icon_new.png";
 import star_dull_icon from "./star_dull_icon.svg";
+import star_dull_icon_new from "./star_dull_icon_new.png";
 import cart_icon from "./cart_icon.svg";
 import nav_cart_icon from "./nav_cart_icon.svg";
 import add_icon from "./add_icon.svg";
@@ -22,7 +25,9 @@ import black_arrow_icon from "./black_arrow_icon.svg";
 import white_arrow_icon from "./white_arrow_icon.svg";
 import main_banner_bg from "./main_banner_bg.png";
 import main_banner_bg_sm from "./main_banner_bg_sm.png";
+import main_banner_bg_new from "./main_banner_bg_new.png";
 import bottom_banner_image from "./bottom_banner_image.png";
+import bottom_bg_banner_new from "./bottom_bg_banner_new.png";
 import bottom_banner_image_sm from "./bottom_banner_image_sm.png";
 import add_address_iamge from "./add_address_image.svg";
 import organic_vegitable_image from "./organic_vegitable_image.png";
@@ -69,13 +74,22 @@ import vanilla_muffins_image from "./vanilla_muffins_image.png";
 import quinoa_image from "./quinoa_image.png";
 import brown_rice_image from "./brown_rice_image.png";
 import barley_image from "./barley_image.png";
+import delivery_truck_icon_new from "./deliverytruck_icon_new.png";
+import leaf_icon_new from "./leaf_icon_new.png";
+import trust_icon_new from "./trust_icon_new.png";
+import coin_icon_new from "./coin_icon_new.png";
+
+
 
 export const assets = {
   logo,
   search_icon,
   remove_icon,
   arrow_right_icon_colored,
+  arrow_left_icon,
   star_icon,
+  star_icon_new,
+  star_dull_icon_new,
   star_dull_icon,
   cart_icon,
   nav_cart_icon,
@@ -94,8 +108,10 @@ export const assets = {
   white_arrow_icon,
   main_banner_bg,
   main_banner_bg_sm,
+  main_banner_bg_new,
   bottom_banner_image,
   bottom_banner_image_sm,
+  bottom_bg_banner_new,
   add_address_iamge,
   box_icon,
 };
@@ -179,22 +195,22 @@ export const footerLinks = [
 
 export const features = [
   {
-    icon: delivery_truck_icon,
+    icon: delivery_truck_icon_new,
     title: "Fastest Delivery",
     description: "Groceries delivered in under 30 minutes.",
   },
   {
-    icon: leaf_icon,
+    icon: leaf_icon_new,
     title: "Freshness Guaranteed",
     description: "Fresh produce straight from the source.",
   },
   {
-    icon: coin_icon,
+    icon: coin_icon_new,
     title: "Affordable Prices",
     description: "Quality groceries at unbeatable prices.",
   },
   {
-    icon: trust_icon,
+    icon: trust_icon_new,
     title: "Trusted by Thousands",
     description: "Loved by 10,000+ happy customers.",
   },

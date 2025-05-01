@@ -7,7 +7,7 @@ const ProductCard = ({product}) => {
 
 
     return product && (
-        <div onClick={()=> {navigate(`/product/${product.category.toLowerCase()}/${product._id}`); scrollTo(0,0)}} className="border text-primary border-gray-500/20 rounded-md md:px-4 px-3 py-2 bg-white min-w-56 max-w-56 w-full">
+        <div onClick={()=> {navigate(`/product/${product.category.toLowerCase()}/${product._id}`); scrollTo(0,0)}} className="border border-amber-300 text-amber-500 rounded-md md:px-4 px-3 py-2 bg-white min-w-56 max-w-56 w-full">
             <div className="group cursor-pointer flex items-center justify-center px-2">
                 <img className="group-hover:scale-105 transition max-w-26 md:max-w-36" src={product.image[0]} alt={product.name} />
             </div>
@@ -18,24 +18,24 @@ const ProductCard = ({product}) => {
                 <div className="flex items-center gap-0.5">
                     {Array(5).fill('').map((_, i) => (
                        
-                        <img key={i} className="md:w-3.5 w-3" src={i<4 ? assets.star_icon : assets.star_dull_icon} alt=""/>
+                        <img key={i} className="md:w-3.5 w-3" src={i<4 ? assets.star_icon_new : assets.star_dull_icon_new} alt=""/>
                         
                     ))}
                     <p>(4)</p>
                 </div>
                 <div className="flex items-end justify-between mt-3">
-                    <p className="md:text-xl text-base font-medium text-primary">
+                    <p className="md:text-xl text-base font-medium text-amber-500">
                         {currency}{product.offerPrice}{" "} <span className="text-gray-500/60 md:text-sm text-xs line-through">{currency}{product.price}</span>
                     </p>
-                    <div onClick={(e)=>{e.stopPropagation()}} className="text-primary">
+                    <div onClick={(e)=>{e.stopPropagation()}} className="text-amber-300">
                         {!cartItems[product._id] ? (
-                            <button className="flex items-center justify-center gap-1 bg-primary-100 border border-primary-300 md:w-[80px] w-[64px] h-[34px] rounded text-primary-600 font-medium cursor-pointer" 
+                            <button className="flex items-center justify-center gap-1 bg-amber-50 border border-amber-500-300 md:w-[80px] w-[64px] h-[34px] rounded text-amber-500 font-medium cursor-pointer" 
                             onClick={()=>addToCart(product._id)} >
                                 <img src={assets.cart_icon} alt="cartIcon" />
                                 Add
                             </button>
                         ) : (
-                            <div className="flex items-center justify-center gap-2 md:w-20 w-16 h-[34px] bg-primary/25 rounded select-none">
+                            <div className="flex items-center justify-center gap-2 md:w-20 w-16 h-[34px] bg-amber-100 text-amber-600 rounded select-none">
                                 <button onClick={() => {removeFromCart(product._id)}} className="cursor-pointer text-md px-2 h-full" >
                                     -
                                 </button>

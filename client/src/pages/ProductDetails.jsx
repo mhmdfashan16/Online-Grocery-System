@@ -29,11 +29,11 @@ const ProductDetails = () => {
 
     return product && (
         <div className="mt-12">
-            <p>
-                <Link className="text-primary" to={"/"}>Home</Link> /
-                <Link className="text-primary" to={"/product"}> Products</Link> /
-                <Link className="text-primary" to={`/products/${product.category.toLowerCase()}`}> {product.category}</Link> /
-                <span className="text-primary"> {product.name}</span>
+            <p className='text-gray-500'>
+                <Link className="text-amber-500" to={"/"}>Home</Link> /
+                <Link className="text-amber-500" to={"/product"}> Products</Link> /
+                <Link className="text-amber-500" to={`/products/${product.category.toLowerCase()}`}> {product.category}</Link> /
+                <span className="text-amber-500"> {product.name}</span>
             </p>
 
             <div className="flex flex-col md:flex-row gap-16 mt-4">
@@ -59,7 +59,7 @@ const ProductDetails = () => {
                             
                         <img
                         className='md:w-4 w-3.5'
-                         src={i<4 ? assets.star_icon : assets.star_dull_icon} alt=''/>
+                         src={i<4 ? assets.star_icon_new : assets.star_dull_icon_new} alt=''/>
                             
                         ))}
                         <p className="text-base ml-2">(4)</p>
@@ -86,7 +86,7 @@ const ProductDetails = () => {
                         </button>
                         <button
                          onClick={()=> {addToCart(product._id); navigate("/cart")}}
-                        className="w-full py-3.5 cursor-pointer font-medium bg-primary text-white hover:bg-primary-dull transition" >
+                        className="w-full py-3.5 cursor-pointer font-medium bg-amber-400 text-white hover:bg-amber-500-dull transition" >
                             Buy now
                         </button>
                     </div>
@@ -96,7 +96,7 @@ const ProductDetails = () => {
             <div className='flex flex-col items-center mt-20'>
                 <div className='flex flex-col items-center w-max'>
                     <p className='text-3xl font-medium'>Related Products</p>
-                    <div className='w-20 h-0.5 bg-primary rounded-full mt-2'>
+                    <div className='w-20 h-0.5 bg-amber-500 rounded-full mt-2'>
 
                     </div>
                 </div>
@@ -107,7 +107,7 @@ const ProductDetails = () => {
                 </div>
                 <button
                 onClick={()=> {navigate('/products'); scrollTo(0,0)}}
-                className='mx-auto cursor-pointer px-12 my-16 py-2.5 border rounded text-primary hover:bg-primary/10 transition'
+                className='mx-auto cursor-pointer px-12 my-16 py-2.5 border rounded text-amber-500 hover:bg-amber-500/10 transition'
                 >See more</button>
             </div>
         </div>
