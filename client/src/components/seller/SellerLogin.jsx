@@ -39,12 +39,12 @@ const SellerLogin = () => {
             className='flex flex-col gap-5 items-start p-8 py-12 min-w-80 sm:min-w-88 rounded-lg shadow-xl border border-gray-200'>
             <p 
             className='text-2xl font-medium m-auto'>
-                <span className='text-primary'>Seller</span> Login
+                <span className='text-orange-400'>Seller</span> Login
             </p>
             <div className='w-full'>
                 <p>Email</p>
                 <input onChange={(e)=>setEmail(e.target.value)} value={email} type="email" placeholder='Enter your email'
-                className='border border-gray-200 rounded w-full p-2 mt-1 outline-primary'
+                className='border border-gray-200 rounded w-full p-2 mt-1 outline-orange-400'
                 required/>
             </div>
             <div className='w-full'>
@@ -52,11 +52,11 @@ const SellerLogin = () => {
                 <input
                 onChange={(e)=>setPassword(e.target.value)} value={password}
                 type="password" placeholder='Enter your password'
-                className='border border-gray-200 p-2 outline-primary w-full mt-1'
+                className='border border-gray-200 p-2 outline-orange-400 w-full mt-1'
                 required/>
             </div>
             <button
-            className='bg-primary  text-white w-full py-2 rounded-md cursor-pointer'
+            className='bg-orange-400  text-white w-full py-2 rounded-md cursor-pointer'
             >Login</button>
 
         </div>

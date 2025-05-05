@@ -106,7 +106,7 @@ const AddProduct = () => {
                         id="offer-price" type="number" placeholder="0" className="outline-none md:py-2.5 py-2 px-3 rounded border border-gray-500/40" required />
                     </div>
                 </div>
-                <button className="px-8 py-2.5 bg-primary cursor-pointer text-white font-medium rounded">ADD</button>
+                <button className="px-8 py-2.5 bg-orange-400 cursor-pointer text-white font-medium rounded">ADD</button>
             </form>
         </div>
     );
