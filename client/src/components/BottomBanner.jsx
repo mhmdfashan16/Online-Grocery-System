@@ -4,10 +4,10 @@ import { assets, features } from '../assets/assets'
 const BottomBanner = () => {
   return (
     <div className='relative mt-24'>
-      <img src={assets.bottom_bg_banner_new} alt="banner" 
-      className='w-full hidden md:block'/>
-      <img src={assets.bottom_banner_image_sm} alt="banner" 
-      className='w-full hidden md:hidden sm:block'/>
+      <img src={assets.banner_med_img} alt="banner" 
+      className='w-full hidden md:block rounded-4xl' />
+      <img src={assets.banner_img_medium} alt="banner" 
+      className='w-full hidden md:hidden sm:block rounded-4xl'/>
       <div className='absolute inset-0 flex flex-col items-center md:items-end 
       md:justify-center pt-16 md:pt-0 md:pr-24'>
         <div>

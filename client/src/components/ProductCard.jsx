@@ -31,7 +31,7 @@ const ProductCard = ({product}) => {
                         {!cartItems[product._id] ? (
                             <button className="flex items-center justify-center gap-1 bg-amber-50 border border-amber-500-300 md:w-[80px] w-[64px] h-[34px] rounded text-amber-500 font-medium cursor-pointer" 
                             onClick={()=>addToCart(product._id)} >
-                                <img src={assets.cart_icon} alt="cartIcon" />
+                                <img src={assets.cart_icon_new} alt="cartIcon" className="w-5" />
                                 Add
                             </button>
                         ) : (

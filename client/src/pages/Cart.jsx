@@ -171,7 +171,7 @@ const Cart = () => {
                         <p
                         
                         className="text-gray-500">{selectedAddress ? `${selectedAddress.street}, ${selectedAddress.city}, ${selectedAddress.state}, ${selectedAddress.country}` : "No address found"}</p>
-                        <button onClick={() => setShowAddress(!showAddress)} className="text-amber-500 hover:underline cursor-pointer">
+                        <button onClick={() => setShowAddress(!showAddress)} className="text-amber-600 hover:underline cursor-pointer">
                             Change
                         </button>
                         {showAddress && (
@@ -203,7 +203,7 @@ const Cart = () => {
                     <p className="flex justify-between">
                     <span>Shipping Fee</span>
                     
-                    <span className="text-green-600">
+                    <span className="text-orange-600">
                         {currency}{deliveryFee}
                     </span>
                   

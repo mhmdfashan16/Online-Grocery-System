@@ -81,6 +81,9 @@ import coin_icon_new from "./coin_icon_new.png";
 import freshlyCart_banner from './freshlyCart_banner.png'
 import freshlyCart_mobile_banner from './freshlyCart_mobile_banner.png'
 import freshlyCart_logo from './freshlyCart_logo.png'
+import cart_icon_new from './cart_icon_new.png'
+import banner_img_medium from './banner_img_medium.png'
+import banner_med_img from './banner_med_img.png'
 
 
 
@@ -88,6 +91,9 @@ export const assets = {
   logo,
   search_icon,
   freshlyCart_banner,
+  cart_icon_new,
+  banner_img_medium,
+  banner_med_img,
   freshlyCart_mobile_banner,
   freshlyCart_logo,
   remove_icon,
