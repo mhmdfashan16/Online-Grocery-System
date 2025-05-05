@@ -38,8 +38,8 @@ const Navbar = () => {
     <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b-2 border-gray-300 bg-white relative transition-all">
 
             <NavLink to={'/'} onClick={()=>setOpen(false)}>
-                {/* <img className="h-9" src={assets.logo} alt="logo" /> */}
-                <h1 className='text-4xl font-extrabold text-amber-400'>S<span className='text-gray-700'>hopShan</span> </h1>
+                <img className="h-18" src={assets.freshlyCart_logo} alt="logo" />
+                {/* <h1 className='text-4xl font-extrabold text-amber-400'>S<span className='text-gray-700'>hopShan</span> </h1> */}
             </NavLink>
 
             {/* Desktop Menu */}

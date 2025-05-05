@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 const MainBanner = () => {
   return (
     <div className='relative '>
-      <img src={assets.main_banner_bg_new} alt="banner" className='w-full hidden rounded-2xl md:block'/>
-      <img src={assets.main_banner_bg_sm} alt="banner" className='w-full md:hidden'/>
+      <img src={assets.freshlyCart_banner} alt="banner" className='w-full hidden rounded-2xl md:block'/>
+      <img src={assets.freshlyCart_mobile_banner} alt="banner" className='w-full rounded-2xl md:hidden'/>
         <div
         className='absolute inset-0 flex flex-col items-center md:items-start justify-end 
         md:justify-center pb-24 md:pb-0 px-4 md:pl-18 lg:pl-24'>

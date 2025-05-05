@@ -78,12 +78,18 @@ import delivery_truck_icon_new from "./deliverytruck_icon_new.png";
 import leaf_icon_new from "./leaf_icon_new.png";
 import trust_icon_new from "./trust_icon_new.png";
 import coin_icon_new from "./coin_icon_new.png";
+import freshlyCart_banner from './freshlyCart_banner.png'
+import freshlyCart_mobile_banner from './freshlyCart_mobile_banner.png'
+import freshlyCart_logo from './freshlyCart_logo.png'
 
 
 
 export const assets = {
   logo,
   search_icon,
+  freshlyCart_banner,
+  freshlyCart_mobile_banner,
+  freshlyCart_logo,
   remove_icon,
   arrow_right_icon_colored,
   arrow_left_icon,
