@@ -91,11 +91,11 @@ const Navbar = () => {
             
             {
             open && (
-            <div className={`${open ? 'flex' : 'hidden'} absolute top-[60px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden`}>
+            <div className={`${open ? 'flex' : 'hidden'} absolute top-[70px] left-5 w-full bg-white shadow-md py-5 flex-row items-start gap-4 px-5 text-[13px] md:hidden`}>
                 <NavLink to={'/'} onClick={()=>{setOpen(false)}}>Home</NavLink>
                 <NavLink to={'/products'} onClick={()=>{setOpen(false)}}>All Products</NavLink>
                 {
-                    user && 
+                    
                     <NavLink to={'/products'} onClick={()=>{setOpen(false)}}>My Orders</NavLink>
                 }
                 <NavLink to={'/'} onClick={()=>{setOpen(false)}}>Contact</NavLink>
@@ -103,13 +103,13 @@ const Navbar = () => {
               {
                 !user ? (
                     <button onClick={()=>{
-                        setOpen(false)                      
-                    }} className="cursor-pointer px-6 py-2 mt-2 bg-amber-500 hover:bg-amber-300 transition text-white rounded-full text-sm">
+                        setShowUserLoggin(true)                   
+                    }} className="cursor-pointer px-6 py-2 mt-[-5px] bg-amber-500 hover:bg-amber-300 transition text-white rounded-full text-sm">
                     Login
                     </button>
                 ):(
                     <button
-                    onClick={logout} className="cursor-pointer px-6 py-2 mt-2 bg-amber-500 hover:bg-amber-400 transition text-white rounded-full text-sm">
+                    onClick={logout} className="cursor-pointer px-6 py-2  mt-[-5px] bg-amber-500 hover:bg-amber-400 transition text-white rounded-full text-sm">
                     Logout
                 </button>
                 )

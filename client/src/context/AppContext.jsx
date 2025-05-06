@@ -72,6 +72,14 @@ export const AppContextProvider = ({children})=>{
         }
     }
 
+    const fetchSearchProduct = async()=>{
+        try{
+            
+        }catch(error){
+
+        }
+    }
+
     //Add Product to cart
     
     const addToCart = (itemId)=>{
