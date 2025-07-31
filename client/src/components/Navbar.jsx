@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 const Navbar = () => {
 
     const [open, setOpen] = React.useState(false);
-    const {user, setUser, setShowUserLoggin, navigate, setSearchQuery, searchQuery, getCartCount, axios}= useAppContext();
+    const {user, setUser, setShowUserLoggin, navigate, setSearchQuery, searchQuery, getCartCount, axios} = useAppContext();
 
     const logout = async()=>{
 
